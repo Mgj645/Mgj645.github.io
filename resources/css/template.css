@@ -59,6 +59,7 @@ header .openbtn {
     padding-top: 60px;
     background-color: #111;
     text-align: left;
+    white-space:nowrap;
 }
 
 .sidebar a {
