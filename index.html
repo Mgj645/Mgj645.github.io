@@ -1,7 +1,43 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Olá mundo</h1>
-<p>DWALLET</p>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="resources/css/template.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
+    <script src="resources/js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body onload="showHome()">
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" onclick="showHome()">Home</a>
+        <a href="#" onclick="showLabs()" style="display: inline-block;">Labs</a>
+        <button id="labsDDBtn" onclick="showLabsDropdown()" class="dropbtn">&#60;</button>
+        <div id="labs" class="dropdown-content">
+            <a href="#" onclick="showLab(1)">Lab 1</a>
+            <a href="#" onclick="showLab(2)">Lab 2</a>
+        </div>
+        <a href="#" onclick="showProject()">Project</a>
+        <a href="#" onclick="showMembers()">Members</a>
+    </div>
+
+    <div id="bodycontents" class="blurry">
+        <header>
+            <span class="openbtn" onclick="openNav()">&#9776;</span>
+            <h1>Title</h1>
+        </header>
+
+
+        <div id="contents" class="light"></div>
+
+        <footer id="indexFooter">
+            <span class="left">Interação Pessoa-Máquina</span>
+            <span class="right">2016-17</span>
+        </footer>
+
+    </div>
+
+    <script src="resources/js/index.js"></script>
 </body>
+
 </html>
